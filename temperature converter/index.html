@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature Convertor</h2>
+        <form action="#">
+            <div class="deg_type">
+             <div class="deg_container">
+            <label for="degrees">Degrees</label><br>
+            <input type="number" name="degrees" placeholder="Enter temperature" id="deg"><br>
+            </div>
+            <div class="type_container">
+                <label for="scale">Type</label><br>
+                <select name="scale" id="temp_scale">
+                    <option value="Sel">--Select Input Scale --</option>
+                    <option value="Fah">Fahrenhiet</option>
+                    <option value="Cel">Celsius</option>
+                    <option value="Kel">Kelvin</option>
+                 </select><br>
+            </div>
+        </div>
+        <div class="res_container">
+        <div>
+            <label for="result">Result</label><br>
+        </div>
+        <div class="res_sub_container">
+            <input type="text" name="result1" id="output_res1" disabled="true">
+            <input type="text" name="result2" id="output_res2" disabled="true">
+        </div>
+            <br>
+        </div>
+        <div class="btn_container">
+            <input type="button" value="Convert" onclick="convert()">
+            <input type="reset">
+        </div>
+        </div>
+    </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
